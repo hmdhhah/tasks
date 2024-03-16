@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="task.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="title">
+        <h1>Tasks</h1>
+      </div>
+      <div class="addlist">
+        <input
+          tabindex="0"
+          class="inputbox"
+          type="text"
+          placeholder="New task"
+        />
+        <button class="addbtn" onclick="add()">Add</button>
+        <button class="cancelbtn">Cancel</button>
+      </div>
+      <div class="body">
+        <div id="maincontainer">
+        <div>
+          <ul id="list"></ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="cmpltdls">
+          <p>Completed(<span id="nooflist">0</span>)</p>
+        </div>
+
+        <div class="list2 checked1">
+          <ul id="completedlistcontainer"></ul>
+        </div>
+    </div>
+    <div class="options">
+     <button>Rename list</button>
+     <button>New list</button>
+     <button>Delete all completed tasks</button>
+     <div class="triangle-down"></div>
+    </div>
+        <div class="edit">
+          <div class="addtolist2">
+            <button class="addtolist">+</button>
+          </div>
+          <button class="thredots">...</button>
+        </div>
+      </div>
+    </div>
+    <script src="task.js"></script>
+  </body>
+</html>
